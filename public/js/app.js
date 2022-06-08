@@ -90,15 +90,23 @@ desktopSliderThumbs.forEach((element) => {
 
 /*** Lightbox Slider Evens***/
 // Show LightBox
-// desktopSliderImg.addEventListener("click", ()=>{
-//     alterClass(document.querySelector(".slider-lightbox"), "slider-lightbox--visible", "add");
-//     addOverlay();
-// });
+desktopSliderImg.addEventListener("click", () => {
+  alterClass(
+    document.querySelector(".slider-lightbox"),
+    "slider-lightbox--visible",
+    "add"
+  );
+  addOverlay();
+});
 // // Hide LightBox
-// closeLightBox.addEventListener("click", () => {
-//     alterClass(document.querySelector(".slider-lightbox"), "slider-lightbox--visible", "remove");
-//     removeOverlay();
-// });
+closeLightBox.addEventListener("click", () => {
+  alterClass(
+    document.querySelector(".slider-lightbox"),
+    "slider-lightbox--visible",
+    "remove"
+  );
+  removeOverlay();
+});
 // Show clicked Photo
 lightBoxSliderThumbs.forEach((element) => {
   element.addEventListener("click", function () {
